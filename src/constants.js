@@ -156,8 +156,8 @@ export const SkillsInfo = [
         "Voxa Chat is a MERN stack-based, single-room chat application with real-time text and image messaging powered by Socket.IO. It features secure user authentication with account creation and login, along with end-to-end encryption to ensure private communication. Designed for personal or small-team use, Voxa Chat delivers a fast, responsive, and seamless chatting experience across devices.",
       image: chat_app,
       tags: ["HTML", "TailwindCSS", "JavaScript", "React JS", "Express", "MongoDb", "Socket.IO", "bcrypt", "JWT", "Cloudinary","Render"],
-      github: "https://github.com/tarunjgupta/FoodDelivery",
-      webapp: "https://fooddelivery-frontend-7fm6.onrender.com/",
+      github: "https://github.com/tarunjgupta/Voxa_App",
+      webapp: "https://voxa-frontend.onrender.com/",
     },
     {
       id: 2,
@@ -166,8 +166,8 @@ export const SkillsInfo = [
         "A simple yet functional weather application built using HTML, CSS, and JavaScript. It fetches real-time weather data from a public API based on user-input city names and dynamically displays temperature, humidity, wind speed, and weather conditions. The app features a clean, responsive UI and demonstrates API integration, asynchronous JavaScript, and DOM manipulation. It serves as a lightweight utility tool and showcases strong fundamentals of frontend development without any frameworks.",
       image: weather_app,
       tags: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/tarunjgupta/Voxa_App",
-      webapp: "https://voxa-frontend.onrender.com/",
+      github: "https://github.com/tarunjgupta/Weather_App",
+      webapp: "https://weather-app-uarf.onrender.com",
     },
       {
       id: 3,
