@@ -6,7 +6,7 @@ const Education = () => {
     <section
       id="education"
       className="py-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-3"
-    >
+    >   
       {/* ─────────────── section header ─────────────── */}
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-white">EDUCATION</h2>
@@ -19,46 +19,47 @@ const Education = () => {
 
       {/* ─────────────── timeline container ─────────────── */}
       <div className="relative">
-        {/* centre vertical line */}
+        {/* centre vertical line (desktop only) */}
         <div className="hidden sm:block absolute left-1/2 -translate-x-1/2 w-1 bg-white h-full z-0" />
 
         {education.map((edu, idx) => {
-          const isLeft = idx % 2 === 0; // even items on the left
+          const isLeft = idx % 2 === 0;
+
           return (
-            <div
-              key={edu.id}
-              className="relative mb-20 flex flex-col sm:flex-row items-start"
-            >
-              {/* LEFT COLUMN (card or empty) */}
-              <div
-                className={`${isLeft ? 'sm:w-1/2 sm:pr-10' : 'sm:w-1/2 hidden sm:block'}`}
-              >
-                {isLeft && (
-                  <Card edu={edu} />
-                )}
+            <div key={edu.id} className="relative mb-20">
+              {/* ─────────────── Desktop Layout ─────────────── */}
+              <div className="hidden sm:flex items-start w-full relative">
+                {/* LEFT COLUMN */}
+                <div
+                  className={`${
+                    isLeft ? 'sm:w-1/2 sm:pr-10' : 'sm:w-1/2 hidden sm:block'
+                  }`}
+                >
+                  {isLeft && <Card edu={edu} />}
+                </div>
+
+                {/* timeline dot */}
+                <div className="absolute left-1/2 -translate-x-1/2 z-20">
+                  <span className="bg-white border-4 border-[#8245ec] w-14 h-14 rounded-full flex justify-center items-center">
+                    <img
+                      src={edu.img}
+                      alt={edu.school}
+                      className="w-full h-full rounded-full object-cover"
+                    />
+                  </span>
+                </div>
+
+                {/* RIGHT COLUMN */}
+                <div
+                  className={`${
+                    !isLeft ? 'sm:w-1/2 sm:pl-10' : 'sm:w-1/2 hidden sm:block'
+                  }`}
+                >
+                  {!isLeft && <Card edu={edu} />}
+                </div>
               </div>
 
-              {/* timeline dot */}
-              <div className="hidden sm:flex absolute left-1/2 -translate-x-1/2 z-20">
-                <span className="bg-white border-4 border-[#8245ec] w-14 h-14 rounded-full flex justify-center items-center">
-                  <img
-                    src={edu.img}
-                    alt={edu.school}
-                    className="w-full h-full rounded-full object-cover"
-                  />
-                </span>
-              </div>
-
-              {/* RIGHT COLUMN (card or empty) */}
-              <div
-                className={`${!isLeft ? 'sm:w-1/2 sm:pl-10' : 'sm:w-1/2 hidden sm:block'}`}
-              >
-                {!isLeft && (
-                  <Card edu={edu} />
-                )}
-              </div>
-
-              {/* MOBILE‑ONLY stacked card */}
+              {/* ─────────────── Mobile Layout ─────────────── */}
               <div className="sm:hidden mt-16">
                 <Card edu={edu} />
               </div>
