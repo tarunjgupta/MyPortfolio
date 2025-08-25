@@ -166,8 +166,8 @@ export const SkillsInfo = [
         "A simple yet functional weather application built using HTML, CSS, and JavaScript. It fetches real-time weather data from a public API based on user-input city names and dynamically displays temperature, humidity, wind speed, and weather conditions. The app features a clean, responsive UI and demonstrates API integration, asynchronous JavaScript, and DOM manipulation. It serves as a lightweight utility tool and showcases strong fundamentals of frontend development without any frameworks.",
       image: weather_app,
       tags: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/tarunjgupta/Weather_App",
-      webapp: "https://weather-app-uarf.onrender.com",
+      github: "https://github.com/tarunjgupta/Voxa_App",
+      webapp: "https://voxa-frontend.onrender.com/",
     },
       {
       id: 3,
