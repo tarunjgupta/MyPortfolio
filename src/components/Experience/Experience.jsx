@@ -27,32 +27,42 @@ const Experience = () => {
           const isLeft = idx % 2 === 0;
 
           return (
-            <div
-              key={exp.id}
-              className="relative flex flex-col sm:flex-row items-start mb-20"
-            >
-              {/* Left column */}
-              <div className={`${isLeft ? 'sm:w-1/2 sm:pr-10' : 'sm:w-1/2 hidden sm:block'}`}>
-                {isLeft && <Card experience={exp} />}
+            <div key={exp.id} className="relative mb-20">
+              {/* ─────────────── Desktop Layout ─────────────── */}
+              <div className="hidden sm:flex items-start w-full relative">
+                {/* Left column */}
+                <div
+                  className={`${
+                    isLeft ? "sm:w-1/2 sm:pr-10" : "sm:w-1/2 hidden sm:block"
+                  }`}
+                >
+                  {isLeft && <Card experience={exp} />}
+                </div>
+
+                {/* Timeline Dot */}
+                <div className="absolute left-1/2 -translate-x-1/2 z-20">
+                  <span className="bg-white border-4 border-[#8245ec] w-14 h-14 rounded-full flex justify-center items-center">
+                    <img
+                      src={exp.img}
+                      alt={exp.company}
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  </span>
+                </div>
+
+                {/* Right column */}
+                <div
+                  className={`${
+                    !isLeft
+                      ? "sm:w-1/2 sm:pl-10"
+                      : "sm:w-1/2 hidden sm:block"
+                  }`}
+                >
+                  {!isLeft && <Card experience={exp} />}
+                </div>
               </div>
 
-              {/* Timeline Dot */}
-              <div className="hidden sm:flex absolute left-1/2 -translate-x-1/2 z-20">
-                <span className="bg-white border-4 border-[#8245ec] w-14 h-14 rounded-full flex justify-center items-center">
-                  <img
-                    src={exp.img}
-                    alt={exp.company}
-                    className="w-full h-full object-cover rounded-full"
-                  />
-                </span>
-              </div>
-
-              {/* Right column */}
-              <div className={`${!isLeft ? 'sm:w-1/2 sm:pl-10' : 'sm:w-1/2 hidden sm:block'}`}>
-                {!isLeft && <Card experience={exp} />}
-              </div>
-
-              {/* Mobile fallback */}
+              {/* ─────────────── Mobile Layout ─────────────── */}
               <div className="sm:hidden mt-16">
                 <Card experience={exp} />
               </div>
@@ -65,7 +75,6 @@ const Experience = () => {
 };
 
 // ──────────────────────────────── Card component ────────────────────────────────
-
 const Card = ({ experience }) => (
   <div className="w-full p-6 sm:p-8 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transform transition-transform duration-300 hover:scale-105 z-10">
     <div className="flex items-center space-x-6">
