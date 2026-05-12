@@ -50,7 +50,7 @@ engineering roles focused on frontend and backend development.
 
         {/* Resume Button */}
         <a
-          href="https://drive.google.com/file/d/1gM8Ab4zAeMOhxJ3W4Q4p3lfGo8t5Iddd/view?usp=sharing"
+          href="https://drive.google.com/file/d/1hIZ5uCcLGCoFTj0hA158MDe6e2CmMvB4/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
