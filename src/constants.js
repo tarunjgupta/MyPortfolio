@@ -41,6 +41,7 @@ import weather_app from './assets/work_logo/weather_app.png';
 import chat_app from './assets/work_logo/chat_app.png';
 import ems from './assets/work_logo/ems.png';
 import CueMaths from './assets/work_logo/CueMaths.png'
+import mango from './assets/work_logo/mango.png'
 
 
 export const SkillsInfo = [
@@ -142,8 +143,30 @@ export const education = [
 ];
 
 export const projects = [
-    {
+  {
     id: 0,
+    title: "Mangolyze",
+    description:
+      "A comprehensive machine learning application that detects diseases in mango leaves using a Patch-Based Convolutional Neural Network (CNN). The project utilizes transfer learning with MobileNetV2 to classify diseases (such as Anthracnose, Bacterial Canker, and Scab) and features Grad-CAM explainability to generate heatmaps that visualize the model's decision-making process. The system is wrapped in a responsive, user-friendly Streamlit web dashboard that allows users to upload images and receive instant, interpretable predictions.",
+    image: mango,
+    tags: [
+  "Python", 
+  "TensorFlow", 
+  "Keras", 
+  "Streamlit", 
+  "OpenCV", 
+  "NumPy", 
+  "Matplotlib", 
+  "Pillow", 
+  "MobileNetV2", 
+  "Grad-CAM"
+],
+
+    github: "https://github.com/tarunjgupta/MangoDiseaseDetector",
+    webapp: "https://mango-disease-app.streamlit.app/",
+  },
+    {
+    id: 1,
     title: "CueMaths",
     description:
       "CueMaths is a full-stack, production-ready educational application designed to help students solve complex math and logic problems. It leverages generative AI to provide step-by-step problem-solving guidance, analyze student mistakes to identify conceptual gaps, and dynamically generate adaptive follow-up questions tailored to the user's skill level. The platform includes secure JWT authentication, data persistence, and a comprehensive dashboard that tracks student progress and offers statistical insights, creating a highly engaging and personalized learning experience.",
@@ -153,7 +176,7 @@ export const projects = [
     webapp: "https://cue-maths-frontend.vercel.app/login",
   },
   {
-    id: 1,
+    id: 2,
     title: "VendiQ",
     description:
       "The VendiQ is a full-stack Vendors and Customers managemnet System that connects admins, vendors, and users on a single platform. Users can browse vendors by category, add products to a cart, place orders, manage guest lists, and track order status. Vendors can manage products and update order progress, while admins control users, vendors, memberships, and transactions. The system is built using Node.js, Express, and MySQL with a secure, normalized database design, role-based access control, and session-based authentication, making it scalable and production-ready.",
@@ -163,7 +186,7 @@ export const projects = [
     webapp: "https://ems-fawn.vercel.app",
   },
   {
-    id: 2,
+    id: 3,
     title: "Food Ordering Website",
     description:
       "I developed a full-stack Food Ordering Web Application using the MERN stack, featuring a responsive and user-friendly frontend built with React.js and Tailwind CSS. The application allows users to browse food items, place orders, and view their order history. The backend, built with Express.js and MongoDB, manages food data, orders, and user interactions through secure and efficient RESTful APIs. I also integrated Razorpay to enable secure online payments, ensuring orders are only saved upon successful transaction verification. The project is fully deployed with uptime monitoring in place to keep the backend consistently available, providing a smooth and reliable user experience.",
@@ -173,7 +196,7 @@ export const projects = [
     webapp: "https://fooddelivery-frontend-7fm6.onrender.com/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Voxa Chat - Secure Real-Time Messaging App",
     description:
       "Voxa Chat is a MERN stack-based, single-room chat application with real-time text and image messaging powered by Socket.IO. It features secure user authentication with account creation and login, along with end-to-end encryption to ensure private communication. Designed for personal or small-team use, Voxa Chat delivers a fast, responsive, and seamless chatting experience across devices.",
@@ -183,7 +206,7 @@ export const projects = [
     webapp: "https://voxa-frontend.onrender.com/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Weather App",
     description:
       "A simple yet functional weather application built using HTML, CSS, and JavaScript. It fetches real-time weather data from a public API based on user-input city names and dynamically displays temperature, humidity, wind speed, and weather conditions. The app features a clean, responsive UI and demonstrates API integration, asynchronous JavaScript, and DOM manipulation. It serves as a lightweight utility tool and showcases strong fundamentals of frontend development without any frameworks.",
@@ -193,7 +216,7 @@ export const projects = [
     webapp: "https://weather-app-uarf.onrender.com",
   },
   {
-    id: 5,
+    id: 6,
     title: "QRcode Generator",
     description:
       "A simple and responsive QR Code Generator built using HTML, CSS, and JavaScript. It allows users to generate QR codes instantly by entering any text, URL, or custom string. The application dynamically creates a QR code using the input provided and displays it for scanning. Ideal for quickly sharing links or information in a scannable format.",
@@ -203,7 +226,7 @@ export const projects = [
     webapp: "https://qr-generator-a3s6.onrender.com",
   },
   {
-    id: 6,
+    id: 7,
     title: "Password Generator",
     description:
       "A secure and interactive password generator built using HTML, CSS, and JavaScript. It allows users to instantly generate strong 12-character passwords combining uppercase, lowercase, numbers, and special characters. The app includes a user-friendly \"Copy to Clipboard \" feature for easy password reuse and emphasizes responsive design and seamless user experience. This project highlights core JavaScript skills like DOM manipulation, event handling, and randomization logic to ensure high-entropy password creation.",
