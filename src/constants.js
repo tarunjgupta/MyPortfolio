@@ -39,7 +39,7 @@ import Pass_gen from './assets/work_logo/Pass_gen.png';
 import qr_gen from './assets/work_logo/qr_gen.png';
 import weather_app from './assets/work_logo/weather_app.png';
 import chat_app from './assets/work_logo/chat_app.png';
-import ems from './assets/work_logo/ems.png';
+import ems from './assets/work_logo/VendiQ.png';
 import CueMaths from './assets/work_logo/CueMaths.png'
 import mango from './assets/work_logo/mango.png'
 
