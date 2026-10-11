@@ -11,23 +11,30 @@ import nodejsLogo from './assets/tech_logo/nodejs.png';
 import expressjsLogo from './assets/tech_logo/express.png';
 import mysqlLogo from './assets/tech_logo/mysql.png';
 import mongodbLogo from './assets/tech_logo/mongodb.png';
+import postgreLogo from './assets/tech_logo/postgre.png';
+import neonLogo from './assets/tech_logo/neon.svg';
 import cLogo from './assets/tech_logo/c.png';
 import javaLogo from './assets/tech_logo/java.png';
 import pythonLogo from './assets/tech_logo/python.png';
+import phpLogo from './assets/tech_logo/php.svg';
 import typescriptLogo from './assets/tech_logo/typescript.png';
 import gitLogo from './assets/tech_logo/git.png';
 import githubLogo from './assets/tech_logo/github.png';
 import vscodeLogo from './assets/tech_logo/vscode.png';
 import postmanLogo from './assets/tech_logo/postman.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
-import RenderLogo from './assets/tech_logo/Render.png'
-import emailJsLogo from './assets/tech_logo/emailJs.png'
-import cloudinaryLogo from './assets/tech_logo/cloudinary.png'
-
+import RenderLogo from './assets/tech_logo/Render.png';
+import netlifyLogo from './assets/tech_logo/netlify.png';
+import dockerLogo from './assets/tech_logo/docker.svg';
+import sonarqubeLogo from './assets/tech_logo/sonarqube.svg';
+import fastapiLogo from './assets/tech_logo/fastapi.svg';
+import apiLogo from './assets/tech_logo/api.svg';
+import razorpayLogo from './assets/tech_logo/razorpay.svg';
+import cloudinaryLogo from './assets/tech_logo/cloudinary.png';
 
 // Experience Section Logo's
-import codeaplphalogo from './assets/company_logo/codealphalogo.png';
-
+import lavalogo from './assets/company_logo/lavalogo.png';
+import iconmalogo from './assets/company_logo/iconmalogo.png';
 
 // Education Section Logo's
 import schLogo from './assets/education_logo/schLogo.jpg';
@@ -40,55 +47,65 @@ import qr_gen from './assets/work_logo/qr_gen.png';
 import weather_app from './assets/work_logo/weather_app.png';
 import chat_app from './assets/work_logo/chat_app.png';
 import ems from './assets/work_logo/VendiQ.png';
-import CueMaths from './assets/work_logo/CueMaths.png'
-import mango from './assets/work_logo/mango.png'
-
+import CueMaths from './assets/work_logo/CueMaths.png';
+import mango from './assets/work_logo/mango.png';
 
 export const SkillsInfo = [
   {
+    title: 'Languages',
+    skills: [
+      { name: 'Java', logo: javaLogo },
+      { name: 'JavaScript', logo: javascriptLogo },
+      { name: 'Python', logo: pythonLogo },
+      { name: 'PHP', logo: phpLogo },
+      { name: 'C', logo: cLogo },
+      { name: 'TypeScript', logo: typescriptLogo },
+    ],
+  },
+  {
     title: 'Frontend',
     skills: [
-      { name: 'HTML', logo: htmlLogo },
-      { name: 'CSS', logo: cssLogo },
-      { name: 'JavaScript', logo: javascriptLogo },
       { name: 'React JS', logo: reactjsLogo },
-      { name: 'Redux', logo: reduxLogo },
-      { name: 'Next JS', logo: nextjsLogo },
+      { name: 'HTML5', logo: htmlLogo },
+      { name: 'CSS3', logo: cssLogo },
       { name: 'Tailwind CSS', logo: tailwindcssLogo },
       { name: 'Material UI', logo: materialuiLogo },
-      { name: 'EmailJs', logo: emailJsLogo },
+      { name: 'Next JS', logo: nextjsLogo },
+      { name: 'Redux', logo: reduxLogo },
     ],
   },
   {
     title: 'Backend',
     skills: [
-
       { name: 'Node JS', logo: nodejsLogo },
       { name: 'Express JS', logo: expressjsLogo },
+      { name: 'PHP', logo: phpLogo },
+      { name: 'FastAPI', logo: fastapiLogo },
+      { name: 'RESTful APIs', logo: apiLogo },
+    ],
+  },
+  {
+    title: 'Databases',
+    skills: [
+      { name: 'PostgreSQL', logo: postgreLogo },
       { name: 'MongoDB', logo: mongodbLogo },
+      { name: 'Neon', logo: neonLogo },
       { name: 'MySQL', logo: mysqlLogo },
     ],
   },
   {
-    title: 'Languages',
-    skills: [
-      { name: 'C', logo: cLogo },
-      { name: 'Java', logo: javaLogo },
-      { name: 'Python', logo: pythonLogo },
-      { name: 'JavaScript', logo: javascriptLogo },
-      { name: 'TypeScript', logo: typescriptLogo },
-    ],
-  },
-  {
-    title: 'Tools',
+    title: 'Tools & Platforms',
     skills: [
       { name: 'Git', logo: gitLogo },
       { name: 'GitHub', logo: githubLogo },
-      { name: 'VS Code', logo: vscodeLogo },
+      { name: 'Docker', logo: dockerLogo },
+      { name: 'SonarQube', logo: sonarqubeLogo },
       { name: 'Postman', logo: postmanLogo },
       { name: 'Render', logo: RenderLogo },
-      { name: 'Vercel', logo: vercelLogo },
+      { name: 'Netlify', logo: netlifyLogo },
       { name: 'Cloudinary', logo: cloudinaryLogo },
+      { name: 'Razorpay', logo: razorpayLogo },
+      { name: 'VS Code', logo: vscodeLogo },
     ],
   },
 ];
@@ -96,20 +113,40 @@ export const SkillsInfo = [
 export const experiences = [
   {
     id: 0,
-    img: codeaplphalogo,
-    role: "Frontend Developer",
-    company: "CodeAlpha",
-    date: "July 2025 - August 2025",
-    desc: "Focused on building dynamic and responsive web applications using the Tailwind CSS, Material UI and React, with a strong emphasis on frontend development. Designed and developed intuitive user interfaces using React.js, collaborated with UI/UX teams, and ensured seamless user experiences through performance optimization and responsive design in an agile environment.",
+    img: lavalogo,
+    role: "Graduate Engineer Trainee",
+    company: "LAVA International Ltd.",
+    location: "Noida, India",
+    date: "Sept 2026 - Present",
+    desc: "Developing backend PHP services for internal platforms (My LAVA & Empower), driving feature development, codebase migration, and long-term maintainability improvements. Resolved 2,000+ SonarQube issues (code smells, vulnerabilities, and bugs), enforcing coding standards and code quality assurance across multiple repositories. Also contributing to Java-based modules.",
     skills: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React JS",
-      "Tailwind CSS",
+      "PHP",
+      "Java",
+      "SonarQube",
+      "Code Quality Assurance",
+      "Backend Architecture",
+      "RESTful APIs",
+      "Codebase Migration",
+    ],
+    link: "https://drive.google.com/file/d/1G-MxSzoVOvQYDTKLi_6MaXvzdSWIFIHc/view?usp=sharing",
+  },
+  {
+    id: 1,
+    img: iconmalogo,
+    role: "Associate US IT Recruiter",
+    company: "ICONMA Staffing",
+    location: "Noida, India",
+    date: "July 6, 2024 - Sept 5, 2024 (Full-time)",
+    desc: "Managed end-to-end talent acquisition pipelines for US technology clients on a full-time basis from July 6 to September 5. Sourced, screened, and evaluated high-caliber engineering candidates across diverse tech stacks, conducted technical qualification reviews, and coordinated client interview pipelines.",
+    skills: [
+      "US IT Staffing",
+      "Talent Acquisition",
+      "Technical Screening",
+      "Candidate Sourcing",
+      "Client Management",
+      "Communication",
     ],
   },
-
 ];
 
 export const education = [
@@ -118,8 +155,8 @@ export const education = [
     img: abesLogo,
     school: "ABES ENGINEERING COLLEGE, GHAZIABAD",
     date: "Nov 2022 - Present",
-    grade: "7.5 CGPA",
-    desc: "I have completed my B.Tech in Information Technology from ABES Engineering College, Ghaziabad. During my time at ABES, I developed a strong foundation in programming, Data Structures and Algorithms, Web Development, and Backend Technologies. I studied key subjects such as DSA, DBMS, Operating Systems, and Software Engineering. I was actively involved in technical clubs and served as the Head of the Technical Department, where I organized events and mentored juniors. These experiences significantly contributed to my technical growth and leadership skills.",
+    grade: "7.9 CGPA",
+    desc: "B.Tech in Information Technology from ABES Engineering College (AKTU), Ghaziabad. Developing a strong foundation in programming, Data Structures and Algorithms, Web Development, and Backend Technologies. Actively involved in technical departments, software engineering, and community mentoring.",
     degree: "Bachelor in Information Technology - B.TECH",
   },
   {
@@ -128,7 +165,7 @@ export const education = [
     school: "St. Mary's School, Najibabad",
     date: "Apr 2020 - Feb 2021",
     grade: "85.2%",
-    desc: "I completed my Intermediate education from St. Mary’s School, Najibabad, where I developed a strong interest in programming. It was during this time that I began exploring the basics of Java and fundamental programming concepts. I also laid the groundwork in subjects like Mathematics and Computer Science, which fueled my passion for technology and set the stage for my journey into software development.",
+    desc: "Completed Intermediate education from St. Mary’s School, Najibabad (ICSE Board), laying foundational knowledge in programming, Mathematics, and Computer Science.",
     degree: "ICSE(XII) - PCM with Computer Science",
   },
   {
@@ -137,7 +174,7 @@ export const education = [
     school: "St. Mary's School, Najibabad",
     date: "Apr 2018 - March 2019",
     grade: "86.4%",
-    desc: "I completed my 10th standard from St. Mary’s School, Najibabad, where I built a strong academic foundation and developed an early interest in computers and technology. This phase played a key role in shaping my curiosity and problem-solving mindset.",
+    desc: "Completed Matriculation from St. Mary’s School, Najibabad (ICSE Board), building a strong academic foundation and passion for computer systems and problem-solving.",
     degree: "ICSE(X) - PCM with Computer Science",
   },
 ];
@@ -147,51 +184,47 @@ export const projects = [
     id: 0,
     title: "Mangolyze",
     description:
-      "A comprehensive machine learning application that detects diseases in mango leaves using a Patch-Based Convolutional Neural Network (CNN). The project utilizes transfer learning with MobileNetV2 to classify diseases (such as Anthracnose, Bacterial Canker, and Scab) and features Grad-CAM explainability to generate heatmaps that visualize the model's decision-making process. The system is wrapped in a responsive, user-friendly Streamlit web dashboard that allows users to upload images and receive instant, interpretable predictions.",
+      "A machine learning application that detects diseases in mango leaves using a Patch-Based Convolutional Neural Network (CNN). Utilizes MobileNetV2 Transfer Learning for multi-class classification across 4 categories achieving 92% accuracy, with patch-based segmentation (128x128 tiles) and Grad-CAM explainability heatmaps. Published research at ICDAM 2026.",
     image: mango,
     tags: [
-  "Python", 
-  "TensorFlow", 
-  "Keras", 
-  "Streamlit", 
-  "OpenCV", 
-  "NumPy", 
-  "Matplotlib", 
-  "Pillow", 
-  "MobileNetV2", 
-  "Grad-CAM"
-],
-
+      "Python", 
+      "TensorFlow", 
+      "Keras", 
+      "Streamlit", 
+      "OpenCV", 
+      "MobileNetV2", 
+      "Grad-CAM"
+    ],
     github: "https://github.com/tarunjgupta/MangoDiseaseDetector",
     webapp: "https://mango-disease-app.streamlit.app/",
   },
-    {
+  {
     id: 1,
-    title: "CueMaths",
+    title: "VendiQ",
     description:
-      "CueMaths is a full-stack, production-ready educational application designed to help students solve complex math and logic problems. It leverages generative AI to provide step-by-step problem-solving guidance, analyze student mistakes to identify conceptual gaps, and dynamically generate adaptive follow-up questions tailored to the user's skill level. The platform includes secure JWT authentication, data persistence, and a comprehensive dashboard that tracks student progress and offers statistical insights, creating a highly engaging and personalized learning experience.",
-    image: CueMaths,
-    tags: ["React", "Vite","Tailwind CSS", "Recharts", "Node.js", "Express.js", "PostgreSQL", "JSON Web Tokens (JWT)", "Python", "FastAPI", "Pydantic", "Google Generative AI (Gemini Pro)"],
-    github: "https://github.com/tarunjgupta/CueMaths",
-    webapp: "https://cue-maths-frontend.vercel.app/login",
+      "A full-stack Multi-Role Vendor Management System architected with MVC design principles and 3 role-based dashboards (Admin, Vendor, User). Engineered end-to-end e-commerce workflows, multi-vendor cart and checkout, real-time order tracking, and Chart.js analytics.",
+    image: ems,
+    tags: ["React", "Node.js", "Express.js", "PostgreSQL", "Session", "Chart.js", "Bcrypt"],
+    github: "https://github.com/tarunjgupta/EMS",
+    webapp: "https://ems-fawn.vercel.app/",
   },
   {
     id: 2,
-    title: "VendiQ",
+    title: "CueMaths",
     description:
-      "The VendiQ is a full-stack Vendors and Customers managemnet System that connects admins, vendors, and users on a single platform. Users can browse vendors by category, add products to a cart, place orders, manage guest lists, and track order status. Vendors can manage products and update order progress, while admins control users, vendors, memberships, and transactions. The system is built using Node.js, Express, and MySQL with a secure, normalized database design, role-based access control, and session-based authentication, making it scalable and production-ready.",
-    image: ems,
-    tags: ["HTML", "CSS", "JavaScript", "React JS", "API", "Express", "PostgresSQL", "Bcrypt", "JWT", "Render"],
-    github: "https://github.com/tarunjgupta/EMS",
-    webapp: "https://ems-fawn.vercel.app",
+      "CueMaths is a full-stack, production-ready educational application designed to help students solve complex math and logic problems. It leverages generative AI to provide step-by-step problem-solving guidance, analyze student mistakes to identify conceptual gaps, and dynamically generate adaptive follow-up questions tailored to the user's skill level.",
+    image: CueMaths,
+    tags: ["React", "Vite", "Tailwind CSS", "Recharts", "Node.js", "Express.js", "PostgreSQL", "JWT", "Python", "FastAPI", "Gemini Pro"],
+    github: "https://github.com/tarunjgupta/CueMaths",
+    webapp: "https://cue-maths-frontend.vercel.app/login",
   },
   {
     id: 3,
     title: "Food Ordering Website",
     description:
-      "I developed a full-stack Food Ordering Web Application using the MERN stack, featuring a responsive and user-friendly frontend built with React.js and Tailwind CSS. The application allows users to browse food items, place orders, and view their order history. The backend, built with Express.js and MongoDB, manages food data, orders, and user interactions through secure and efficient RESTful APIs. I also integrated Razorpay to enable secure online payments, ensuring orders are only saved upon successful transaction verification. The project is fully deployed with uptime monitoring in place to keep the backend consistently available, providing a smooth and reliable user experience.",
+      "Full-stack Food Ordering Web Application using the MERN stack, featuring responsive UI, RESTful APIs, and Razorpay online payments with order verification.",
     image: food_order,
-    tags: ["HTML", "CSS", "JavaScript", "React JS", "API", "Express", "MongoDb", "RazorPay", "Render", "UpTimeRobot"],
+    tags: ["React JS", "Node.js", "Express", "MongoDB", "Razorpay", "Tailwind CSS"],
     github: "https://github.com/tarunjgupta/FoodDelivery",
     webapp: "https://fooddelivery-frontend-7fm6.onrender.com/",
   },
@@ -199,9 +232,9 @@ export const projects = [
     id: 4,
     title: "Voxa Chat - Secure Real-Time Messaging App",
     description:
-      "Voxa Chat is a MERN stack-based, single-room chat application with real-time text and image messaging powered by Socket.IO. It features secure user authentication with account creation and login, along with end-to-end encryption to ensure private communication. Designed for personal or small-team use, Voxa Chat delivers a fast, responsive, and seamless chatting experience across devices.",
+      "MERN stack real-time chat application with Socket.IO, JWT authentication, end-to-end encrypted messaging, and Cloudinary image sharing.",
     image: chat_app,
-    tags: ["HTML", "TailwindCSS", "JavaScript", "React JS", "Express", "MongoDb", "Socket.IO", "bcrypt", "JWT", "Cloudinary", "Render"],
+    tags: ["React JS", "Node.js", "Express", "MongoDB", "Socket.IO", "Cloudinary"],
     github: "https://github.com/tarunjgupta/Voxa_App",
     webapp: "https://voxa-frontend.onrender.com/",
   },
@@ -209,9 +242,9 @@ export const projects = [
     id: 5,
     title: "Weather App",
     description:
-      "A simple yet functional weather application built using HTML, CSS, and JavaScript. It fetches real-time weather data from a public API based on user-input city names and dynamically displays temperature, humidity, wind speed, and weather conditions. The app features a clean, responsive UI and demonstrates API integration, asynchronous JavaScript, and DOM manipulation. It serves as a lightweight utility tool and showcases strong fundamentals of frontend development without any frameworks.",
+      "Dynamic weather application built using HTML, CSS, and JavaScript. Fetches real-time weather metrics from public APIs with responsive design.",
     image: weather_app,
-    tags: ["HTML", "CSS", "JavaScript"],
+    tags: ["HTML5", "CSS3", "JavaScript", "REST API"],
     github: "https://github.com/tarunjgupta/Weather_App",
     webapp: "https://weather-app-uarf.onrender.com",
   },
@@ -219,9 +252,9 @@ export const projects = [
     id: 6,
     title: "QRcode Generator",
     description:
-      "A simple and responsive QR Code Generator built using HTML, CSS, and JavaScript. It allows users to generate QR codes instantly by entering any text, URL, or custom string. The application dynamically creates a QR code using the input provided and displays it for scanning. Ideal for quickly sharing links or information in a scannable format.",
+      "Responsive QR Code Generator built using HTML, CSS, and JavaScript. Generates and renders scannable QR codes instantly for URLs and text.",
     image: qr_gen,
-    tags: ["HTML", "CSS", "JavaScript"],
+    tags: ["HTML5", "CSS3", "JavaScript"],
     github: "https://github.com/tarunjgupta/QR_Generator",
     webapp: "https://qr-generator-a3s6.onrender.com",
   },
@@ -229,12 +262,10 @@ export const projects = [
     id: 7,
     title: "Password Generator",
     description:
-      "A secure and interactive password generator built using HTML, CSS, and JavaScript. It allows users to instantly generate strong 12-character passwords combining uppercase, lowercase, numbers, and special characters. The app includes a user-friendly \"Copy to Clipboard \" feature for easy password reuse and emphasizes responsive design and seamless user experience. This project highlights core JavaScript skills like DOM manipulation, event handling, and randomization logic to ensure high-entropy password creation.",
+      "Interactive high-entropy password generator built using HTML, CSS, and JavaScript with clipboard integration and customizable parameters.",
     image: Pass_gen,
-    tags: ["HTML", "CSS", "JavaScript"],
+    tags: ["HTML5", "CSS3", "JavaScript"],
     github: "https://github.com/tarunjgupta/Password_Generator",
     webapp: "https://password-generator-7yus.onrender.com",
   },
-
-
-];  
+];

@@ -41,11 +41,11 @@ const Experience = () => {
 
                 {/* Timeline Dot */}
                 <div className="absolute left-1/2 -translate-x-1/2 z-20">
-                  <span className="bg-white border-4 border-[#8245ec] w-14 h-14 rounded-full flex justify-center items-center">
+                  <span className="bg-white border-4 border-[#8245ec] w-14 h-14 rounded-full flex justify-center items-center overflow-hidden">
                     <img
                       src={exp.img}
                       alt={exp.company}
-                      className="w-full h-full object-cover rounded-full"
+                      className="w-full h-full object-contain p-1"
                     />
                   </span>
                 </div>
@@ -79,11 +79,11 @@ const Card = ({ experience }) => (
   <div className="w-full p-6 sm:p-8 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transform transition-transform duration-300 hover:scale-105 z-10">
     <div className="flex items-center space-x-6">
       {/* Logo */}
-      <div className="w-16 h-16 bg-white rounded-md overflow-hidden flex-shrink-0">
+      <div className="w-16 h-16 bg-white rounded-md overflow-hidden flex-shrink-0 flex items-center justify-center p-1">
         <img
           src={experience.img}
           alt={experience.company}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
       </div>
 
@@ -93,13 +93,29 @@ const Card = ({ experience }) => (
           <h3 className="text-xl sm:text-2xl font-semibold text-white">
             {experience.role}
           </h3>
-          <h4 className="text-sm text-gray-300">{experience.company}</h4>
+          <h4 className="text-sm text-gray-300">
+            {experience.company}
+            {experience.location ? ` • ${experience.location}` : ""}
+          </h4>
         </div>
         <p className="text-sm text-gray-500 mt-2">{experience.date}</p>
       </div>
     </div>
 
-    <p className="mt-4 text-gray-400">{experience.desc}</p>
+    <p className="mt-4 text-gray-400 leading-relaxed">{experience.desc}</p>
+
+    {experience.link && (
+      <div className="mt-3">
+        <a
+          href={experience.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center text-xs font-semibold text-purple-400 hover:text-purple-300 underline"
+        >
+          View Appointment / Verification Letter &rarr;
+        </a>
+      </div>
+    )}
 
     {/* Skills list */}
     <div className="mt-4">

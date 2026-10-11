@@ -25,8 +25,9 @@ const About = () => {
             options={{
               strings: [
                 'Fullstack Developer',
-                'Coding Enthusiast',
-                'Coder',
+                'Graduate Engineer Trainee',
+                'Backend Engineer',
+                'DSA Enthusiast',
               ],
               autoStart: true,
               loop: true,
@@ -43,13 +44,12 @@ const About = () => {
 
         {/* About Me Paragraph */}
         <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed max-w-3xl">
-Full Stack Developer experienced in MERN stack, PostgreSQL, and RESTful APIs. Active DSA problem solver in Java with
-500+ problems solved. Exploring Spring Boot and AI workflow development. 
+          Graduate Engineer Trainee at LAVA International Ltd. and Full Stack Developer experienced in PHP, Java, MERN stack, PostgreSQL, and RESTful APIs. Passionate about software architecture, code quality, and active DSA problem solver with 500+ problems solved and open-source contributions.
         </p>
 
         {/* Resume Button */}
         <a
-          href="https://drive.google.com/file/d/1hIZ5uCcLGCoFTj0hA158MDe6e2CmMvB4/view?usp=sharing"
+          href="https://drive.google.com/file/d/1cuLnGaCgMR23Z6gJDOYf_BnmNUP2zUQb/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
